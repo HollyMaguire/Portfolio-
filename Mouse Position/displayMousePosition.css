@@ -1,0 +1,20 @@
+#field{ min-width: 0;
+    max-width: 97%;
+    width: 97%;
+    Height:580px
+}
+
+.body{background-color: #AFEEEE;
+}
+nav a {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+    float: left;
+}

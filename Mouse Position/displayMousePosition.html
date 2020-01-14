@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+    <div class="navBar"> 
+
+      <nav> <a Id="ON1" type="button" class="btn btn-default btn-lg" href= "../Portfolio HTML page/webpage.html">Back to portfolio</button></a>
+            
+        <a Id="ON2" type="button" class="btn btn-default btn-lg" href="../Portfolio HTML page/projectslink.html">Back to Projects</a>
+</nav>
+      </div>
+<link href="displayMousePosition.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="displayMousePosition.js">
+  </script>
+	</head>
+<body class="body" onload="toggleTracking()" onclick="toggleTracking()" 
+            onmousemove="updateMousePosition();">
+       <h1>Display the Mouse Position</h1>
+    <p>Click anywhere on the page to toggle the mouse position tracking.</p>
+	    <hr />
+    <div>
+	        Mouse tracking: <span id="trackingStatus">NOT TRACKING</span>
+    </div>
+	    <fieldset id=field>
+	        <label>Mouse X:</label><label id="mousePositionX"></label>
+            <label>Mouse Y:</label><label id="mousePositionY"></label>
+
+        </fieldset>
+</body>
+</html>

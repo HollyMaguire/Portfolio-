@@ -1,0 +1,111 @@
+
+
+header, footer {
+ text-align: center; 
+}
+img {
+    height:150px;
+    /* Width was set in orignal image to 400px before import, and I had used <div align:"center"> to get image in the center. */
+}
+.toprow {float:left; width:32%;text-align:center;
+}
+
+.bottom1{ 
+    position: absolute;left:0;top:40%;float:left; width:32%; text-align:center;
+}
+
+.bottom2{
+    position:absolute;left:32%;top:40%;float:left; width:32%;text-align:center;
+}
+
+.bottom3{
+    position:absolute;left:63%;top:40%;float:left; width:32%;text-align:center;
+}
+.basicinfo {
+    text-align: center;}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+    background-color:lightgray;
+}
+.menuItemName{
+    font-size: 25px;
+}
+.mainBody{background-color: lightgreen;
+}
+label {font-weight: bold;}
+.drinkTable {
+    position:absolute;top:60%;float:left;left:27%;text-align:center;
+}
+.menuFooterT {position:absolute;bottom:5%;width:100%
+
+}
+.menuFooterB {position:absolute;bottom:0;left:40%
+
+}
+#homebtn{ position:relative;left:0;top:0;}
+nav {
+    border-top: thin #5b7d87 solid;
+    border-bottom: thin #5b7d87 solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+nav .btn {
+    background-color: #5b7d87;
+    color: #fef9ff; 
+}
+    a:hover {
+        font-weight: bold;
+        text-decoration: none;
+      }
+    
+    a:visited{   
+        color: rgb(86, 235, 86);
+    }
+    a:active  {
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        } 
+.jumbotron {
+    font-weight: bold;
+    color:teal
+}
+#home {height:60px; width:70px}
+
+.alert {
+    padding: 20px;
+    background-color:green;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color:darkblue
+    font-weight: bold;
+    float: right;
+    font-size: 30px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: green;
+  }
+  #AdditionalInfo{ width:35% }
+
+  #beenHerebefore{ margin-left: 33%;}
+ #dayBoxes{ margin-left: 33%;}
+ #sendRequest{margin-left: 48%}
+ #a1 { position:relative;left:3%;top:0;}
+  #a2{ position:relative;left:6%;top:0;}
+  #footer76{
+    width:100%;
+  }
+#ON1 { position:relative;left:3%;top:0;}
+
+#ON2{ position:relative;left:6%;top:0;}

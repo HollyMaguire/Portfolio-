@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div class="navBar"> 
+
+    <nav> <a Id="ON1" type="button" class="btn btn-default btn-lg" href= "../Portfolio HTML page/webpage.html">Back to portfolio</button></a>
+            
+      <a Id="ON2" type="button" class="btn btn-default btn-lg" href="../Portfolio HTML page/projectslink.html">Back to Projects</a>
+</nav>
+    </div>
+<link href="dice.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body class="body">
+        
+<div id="dice1" class="dice"></div>
+<div id="dice2" class="dice"></div>
+<button onclick="rollDice()">Roll the Dice</button>
+<h2 id="results" style="clear:left;"></h2>
+</body>
+
+<script>
+
+function rollDice(){
+  
+  var dice1= document.getElementById("dice1");
+  var dice2= document.getElementById("dice2");
+  var results= document.getElementById("results");
+  var di1= Math.floor(Math.random() * 6) + 1;
+  var di2= Math.floor(Math.random() * 6) + 1;
+  var total=di1+di2;
+  dice1.innerText=String(di1);
+  dice2.innerText=String(di2);
+  results.innerText=("Your roll was" +String(total)+".");
+  if (di1==di2){results.innerText += "you rolled doubles!";};
+
+}
+
+</script>
+
+
+
+</html>

@@ -1,0 +1,66 @@
+
+.body {
+    background-color: lightblue;
+
+    font-family: arial, helvetica, sans-serif;
+    color: #0d1f2d;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: indianred;
+    color: white;
+}
+
+
+
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+
+header, footer {
+    background-color: #546a7b;
+    color:white;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+
+h1 {font-size: 2.5em;
+text-decoration-color: black;}
+
+.ImpFont {font-size: 1.5;
+font-weight: bold;
+}
+
+nav a {
+        background-color: #5b7d87;
+        color: #fef9ff;
+        padding: 8px;
+        border: thin solid #0d1f2d;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 20px;
+        width: 100px;
+        float: left;
+    }
+
+   #github {
+        background-color: #99a30d;
+        color:black;
+        padding: 8px;
+        border: thin solid #0d1f2d;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 20px;
+        width: 100px;
+        float:center
+    }
+.container{width 100%}
+
+#projectFooter{position:absolute;bottom:5%;width:100%

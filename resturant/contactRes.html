@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+    <head> 
+      <div class="navBar"> 
+
+        <nav> <a Id="ON1" type="button" class="btn btn-default btn-lg" href= "../Portfolio HTML page/webpage.html">Back to portfolio</button></a>
+            
+          <a Id="ON2" type="button" class="btn btn-default btn-lg" href="../Portfolio HTML page/projectslink.html">Back to Projects</a>
+ </nav>
+        </div>
+        <title>Casa De Delicious</title>	
+        <link rel="stylesheet" href="restaurantStyleSheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  </head>  <header>
+            <h1 class="name">Casa De Delicious</h1>
+            <hr/>
+        </header>
+        <body>
+        <div class="navBar">
+           <nav> 
+                <div> 
+                  <a type="button" class="btn btn-default btn-lg" href="restaurantHome.html">Home</button><i class="fa fa-home"></i></a>
+                       
+                  <a id="a1" class="btn" href="ResMenu.html">Menu
+            
+                        <a Id="a2" class="btn" href="contactRes.html">Contact Us</a></p>
+                        <hr />
+                        </div>
+        </nav>
+   </div>
+        <form action="redirectNotice.html">
+     <div class="container" align="center">  
+            <div class="col-md-4 mb-3 row">
+              <label for="validationServer01">First name</label>
+              <input type="text" class="form-control " id="validationServer01" placeholder="First name" value="" required>
+              
+            </div>
+            <div class="col-md-4 mb-3 row">
+              <label for="validationServer02">Last name</label>
+              <input type="text" class="form-control" id="validationServer02" placeholder="Last name" value="" required>
+              
+            </div>
+            
+            <div class="col-md-4 mb-3 row">
+              <label for="validationServer02">Phone number</label>
+              <input type="text" class="form-control" id="validationServer03" placeholder="Phone number" value="" required>
+              
+            </div>
+            <strong>Reason For Inquiry</strong>: <select name="Reason for Inquiry" class="col-md-4 mb-3 row">
+                <option value="Catering">Catering</option>
+                <option value="Private Party">Private Party</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+            </select> <br/>
+          
+            <div Id="AdditionalInfo"  class="form-group row">
+              <label for="comment">Additional Information:</label>
+              <textarea class="form-control" rows="3" id="comment"></textarea>
+              </div>
+            
+
+           <div Id=beenHerebefore class="row">
+            <label>Have you ever been here before?</label>
+            <div class="custom-control custom-radio">
+              <input checked="checked" type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+              <label class="custom-control-label" for="customControlValidation2">No</label>
+            </div>
+            <div class="custom-control custom-radio mb-3">
+              <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+              <label class="custom-control-label" for="customControlValidation3">Yes</label>
+              
+            </div>
+          </div>
+
+
+            <div id=dayBoxes  class="row">
+               <strong> Best days to contact you:</strong>
+                <input id="checkBox1" type="checkbox" id="customCheck1" >
+                <label >Monday</label>
+                <input id="checkBox2" type="checkbox" id="customCheck2" >
+                <label >Tuesday</label>
+                <input id="checkBox3" type="checkbox" id="customCheck3" >
+                <label >Wednesday</label>
+                <input id="checkBox4" type="checkbox" id="customCheck4" >
+                <label >Thursday</label>
+                <input id="checkBox5" type="checkbox" id="customCheck5" >
+                <label >Friday</label>
+              </div>
+
+
+          <button id=sendRequest onclick="validateDays()" class="btn btn-primary" type="submit">Send request</button>
+        </form>
+      </div>
+    <script>
+   (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                alert("Please fill out all forms");
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+
+      
+        
+        
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          
+          // Loop over them and prevent submission
+          
+        function validateDays (){
+          
+          checked = false;
+          checkBox= "checkBox";
+          
+          for(let i=1; i<6; i++){
+            if(document.getElementById(checkBox + i.toString()).checked == true){
+              checked = true;
+            }
+          }
+          
+          if (!checked) {
+              event.preventDefault();
+              event.stopPropagation();
+              alert("Please pick a contact day");
+            }
+        }
+           
+          
+        
+      
+    
+    
+    </script>
+
+        <hr/>
+        <footer>
+            <div>1234 Madeup lane, Dallas, Texas, 75234 </div>
+            <div>328-579-5555</div>
+            
+            </footer>
+    </body> 
+</html>
